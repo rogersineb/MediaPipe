@@ -8,6 +8,7 @@ mp_pose = mp.solutions.pose
 if __name__ == '__main__':
 	
 	cap = cv2.VideoCapture(0)
+	cap.set(cv2.CAP_PROP_FRAME_WIDTH, 720)
 	
 	grabbed, frame = cap.read()
 	
